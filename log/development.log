@@ -7017,3 +7017,57 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_events_on_place_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_events_on_place_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_tickets_on_event_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_tickets_on_event_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_tickets_on_ticket_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_tickets_on_ticket_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_tickets_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_tickets_on_user_id' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2018-04-17 14:14:43 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/web/Desktop/lab-assignment-6-ibparrague/app/controllers/application_controller.rb:19: syntax error, unexpected keyword_end
+rect_to root_path,notice:  end 
+                              ^):
+  
+app/controllers/application_controller.rb:19: syntax error, unexpected keyword_end
+app/controllers/sessions_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2018-04-17 14:14:51 -0300
+  
+SyntaxError (/home/web/Desktop/lab-assignment-6-ibparrague/app/controllers/application_controller.rb:19: syntax error, unexpected keyword_end
+rect_to root_path,notice:  end 
+                              ^):
+  
+app/controllers/application_controller.rb:19: syntax error, unexpected keyword_end
+app/controllers/sessions_controller.rb:1:in `<top (required)>'
